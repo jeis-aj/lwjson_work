@@ -1,3 +1,4 @@
+/*
 char json_str[] =
 
 "{\n"
@@ -65,3 +66,25 @@ char json_str[] =
 "        }\n"
 "}\n"
 "";
+*/
+
+char json_str[] = "{\n"
+"\"sender\": \"ui\",\n"
+"\"receiver\": \"supercap\",\n"
+"\"message_id\": \"CON_DT\",\n"
+"\"group_id:\": \"abcd1234efgh5678\",\n"
+"\"group_roll_number\": \"01\",\n"
+"\"hw_id:\": \"XXYYZZNNNN\",\n"
+"\"state\": \"OPERN\",\n"
+"\"timestamp\": \"1699947499\",\n"
+"\n"
+"\"data\": {\n"
+"\t\"bank_voltage_limit\": \"0-168V\",\n"
+"\t\"charging_voltage_limit\": \"0-50A\",\n"
+"\t\"charging_current_limit\": \"0-50A\",\n"
+"\t\"discharging_current_limit\": \"0-130A\",\n"
+"\t\"over_temperature_limit\": \"65 - 85 degrees C\",\n"
+"\t\"cell_balancing_threshold\": \"Cellbalancingthreshold\"\n"
+"\t}\n"
+"\n"
+"} ";

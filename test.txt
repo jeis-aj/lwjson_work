@@ -1,0 +1,21 @@
+{
+"sender": "ui",
+"receiver": "supercap",
+"message_id": "CON_DT",
+"group_id:": "abcd1234efgh5678",
+"group_roll_number": "01",
+"hw_id:": "XXYYZZNNNN",
+"state": "OPERN",
+"timestamp": "1699947499",
+
+"data": {
+	"bank_voltage_limit": "0-168V",
+	"charging_voltage_limit": "0-50A",
+	"charging_current_limit": "0-50A",
+	"discharging_current_limit": "0-130A",
+	"over_temperature_limit": "65 - 85 degrees C",
+	"cell_balancing_threshold": "Cellbalancingthreshold"
+	}
+
+} 
+

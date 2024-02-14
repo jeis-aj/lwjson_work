@@ -1,4 +1,4 @@
-cscope 15 $HOME/rough/lwjson_work/iCU_Connect.X               0000075228
+cscope 15 $HOME/rough/lwjson_work/iCU_Connect.X               0000075466
 	@lwjson/lwjson.c
 
 34 
@@ -5361,19 +5361,21 @@ sz
 	}
 }
 
-23 
+32 
 lwjsÚ_tok’_t
  
 	gtok’s
 [128];
 
-24 
+33 
 lwjsÚ_t
  
 	glwjsÚ
 ;
 
-26 
+45 
+šo
+ 
 	$´oûssMsg
 (
 ušt8_t
@@ -5383,19 +5385,21 @@ buff
 Ën
 ){
 
-28 cÚ¡ 
+46 *
+v®ue
+;
+
+47 cÚ¡ 
 lwjsÚ_tok’_t
 * 
 t1
 ;
 
-29 cÚ¡ 
-lwjsÚ_tok’_t
-* 
-t2
-;
+48 
+key
+[] = "timestamp";
 
-30 
+50 
 	`lwjsÚ_š™
 (&
 lwjsÚ
@@ -5405,7 +5409,7 @@ tok’s
 	`LWJSON_ARRAYSIZE
 (tokens));
 
-32 ià(
+51 ià(
 	`lwjsÚ_·r£
 (&
 lwjsÚ
@@ -5415,55 +5419,95 @@ buff
 lwjsÚOK
 )
 
-35 
+54 
 	`´štf
 ("%s",
 buff
 );
 
-36 
+55 
 	`´štf
 ("\nparse ok\n");
 
-45 ià((
-t2
+57 ià((
+t1
  = 
 	`lwjsÚ_fšd
 (&
 lwjsÚ
-, "C­ac™Ü_©a")è=ð
+, 
+key
+è!ð
 NULL
-){
-
-46 
-	`´štf
-("\n found capacitor data 'key' \n");
-
-49 
-	`´štf
-("\n couldn't find key' \n");
-
-54 
-sucûss
-:
-
-55 
-	`lwjsÚ_ä“
-(&
-lwjsÚ
-);
-
-57 
-çž
-:
+))
 
 58 
-	`lwjsÚ_ä“
-(&
-lwjsÚ
+v®ue
+ = 
+	`´štf
+("\nfound '%s'",
+key
+ );
+
+59 
+	`lwjsÚ_g‘_v®_¡ršg
+(
+t
+, &
+Ëngth
 );
 
 60 
+	`´štf
+("\nv®ue:'%s'", 
+v®ue
+);
+
+63 
+	`´štf
+("\ncouldn'ˆfšd '%s'",
+key
+);
+
+66 ià((
+t1
+ = 
+	`lwjsÚ_fšd
+(&
+lwjsÚ
+, "C­ac™Ü_©a"è!ð
+NULL
+)){
+
+67 
+	`´štf
+("\n found capacitor data 'key' \n");
+
+70 
+	`´štf
+("\n couldn't find key' \n");
+
+75 
+sucûss
+:
+
+76 
+	`lwjsÚ_ä“
+(&
+lwjsÚ
+);
+
+78 
+çž
+:
+
+79 
+	`lwjsÚ_ä“
+(&
+lwjsÚ
+);
+
+81 
 	}
 }
 
